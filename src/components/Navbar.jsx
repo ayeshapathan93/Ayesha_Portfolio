@@ -60,7 +60,10 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <ResumeLink className="btn btn-primary px-3 text-sm whitespace-nowrap sm:px-4" />
+          <ResumeLink className="btn btn-primary px-3 text-sm whitespace-nowrap sm:px-4">
+            <span className="hidden sm:inline">Download Resume</span>
+            <span className="sr-only sm:hidden">Download Resume</span>
+          </ResumeLink>
           <button
             type="button"
             className="grid h-11 w-11 place-items-center rounded-full border border-line text-ink xl:hidden"

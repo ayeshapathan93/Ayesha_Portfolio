@@ -89,7 +89,7 @@ export default function Hero() {
             ))}
           </ul>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap">
             <a className="btn btn-primary" href="#projects">
               Explore My Work <ArrowUpRight size={16} aria-hidden="true" />
             </a>
@@ -99,7 +99,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative h-[420px] sm:h-[520px]">
+        <div className="relative hidden h-[420px] md:block md:h-[520px]">
           <div className="absolute inset-6 rounded-full bg-accent/15 blur-3xl" />
           {useCanvas ? (
             <Suspense fallback={<CssVisual />}>
