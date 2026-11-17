@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayesha Pathan — Software Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Ayesha Pathan, a software developer and Information Technology graduate. Selected work in modern web applications, campus systems, business tools, and intelligent products."
+    />
+    <meta name="author" content="Ayesha Pathan" />
+    <meta name="theme-color" content="#0B0F19" />
+    <meta property="og:title" content="Ayesha Pathan — Software Developer" />
+    <meta
+      property="og:description"
+      content="Software developer portfolio featuring web applications, campus systems, business tools, and intelligent products."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ayesha Pathan — Software Developer" />
+    <meta
+      name="twitter:description"
+      content="Software developer portfolio featuring web applications, campus systems, business tools, and intelligent products."
+    />
+    <meta name="twitter:image" content="/og.jpg" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      try {
+        var stored = localStorage.getItem('theme')
+        var theme = stored === 'light' || stored === 'dark' ? stored : 'dark'
+        document.documentElement.setAttribute('data-theme', theme)
+        var meta = document.querySelector('meta[name="theme-color"]')
+        if (meta) meta.setAttribute('content', theme === 'light' ? '#F3F6FB' : '#0B0F19')
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
